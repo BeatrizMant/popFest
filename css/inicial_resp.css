@@ -1,0 +1,102 @@
+@media (min-width: 400px) and (max-width: 650px){
+
+
+}
+
+@media (max-width: 650px){
+    /* Menu */
+    .menu ul{
+        padding: 3px
+    }
+    
+    .menu li, a{
+        padding: 2.5px;
+    }
+
+    /* Slogan */
+    .sloganImg {
+        width: 650px;
+        height: 600px;
+        opacity:  0.5;
+        margin-top: 22px;
+    
+    }
+    
+    .nome{
+        margin-right: 150px;
+        font-size: 45px;
+        text-shadow: 3px 2px 5px rgba(150,96,203,1);
+    }
+    
+    .slogan{
+        margin-right: 150px;
+        font-size: 15px;
+    }
+
+    /* cards */
+    .cards {
+        width: 270px;
+        height: 220px;
+        margin-left: 12px;
+        margin-right: 12px;
+        margin-bottom: 5%;
+        padding: 15px;
+    }
+
+    .cards .border {
+        border: 2px solid #b039ff;
+        margin: 1.5px;
+    } 
+    
+    .img2 {
+        margin-top: 20px;
+    }
+    
+    .cards img {
+        width: 120px;
+        height: 120px;
+        margin-right: 20px;
+        margin-left: 10px;
+    }
+    
+    
+    .cards p {
+        font-size: 12px;
+    }
+    
+    .titulo {
+        color: #ffffff; 
+        text-shadow: #6f0eaf 0.2em 0.2em 0.3em;
+        text-align: center;
+        margin-top: 5px;
+    
+    }
+    
+    /*Botão*/
+    .fundo-botao {
+        height: 10px;
+    }
+    
+    .botao {
+        outline: 1px solid;
+        font-size: 12px;
+        line-height: 1rem;
+        width: 100%;
+        letter-spacing: 0.3rem;
+        font-weight: 300;
+    }
+    
+    .botao:hover {
+        border: 1.5px solid var(--accent);
+        outline-offset: 12px;
+    }
+    
+    .cards h2 {
+        font-size: 20px;
+    }
+    
+    .grupo {
+        display: block;
+    }
+
+}

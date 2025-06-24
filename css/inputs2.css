@@ -1,0 +1,89 @@
+/* Botão do modal */
+.botoes button {
+    background-color: #ff0077;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ff0077;
+    height: 30px;
+    width: 30%;
+    padding:1%;
+    margin-left: 40px;
+
+}
+
+.botoes button:hover {
+    background-color: transparent;
+    color: #ff0077;
+    border-radius: 5px;
+    border: 1px solid #ff0077;
+    box-shadow: 0 0 15px #ff0077 inset, 0 0 15px #ff0077;
+}
+
+.botoes2 button {
+    background-color: #ff0077;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ff0077;
+    height: 30px;
+    width: 100%;
+    padding:1%;
+    margin-left: 40px;
+    
+}
+
+.botoes2 button:hover {
+    background-color: transparent;
+    color: #ff0077;
+    border-radius: 5px;
+    border: 1px solid #ff0077;
+    box-shadow: 0 0 15px #ff0077 inset, 0 0 15px #ff0077;
+}
+
+.botoes2 {
+    display: flex;
+    height: 30px;
+    width: 550px;
+}
+
+.botoes3 button {
+    background-color: #ff0077;
+    color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #ff0077;
+    height: 35px;
+    font-size: 20px;
+    width: 60%;
+    padding:1%;
+    margin-left: 40px;
+    
+}
+
+.botoes3 button:hover {
+    background-color: transparent;
+    color: #ff0077;
+    border-radius: 5px;
+    border: 1px solid #ff0077;
+    box-shadow: 0 0 15px #ff0077 inset, 0 0 15px #ff0077;
+}
+
+/* Botões amarelos */
+.botoes1 .btn {
+    background-color: #c9c150;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    padding: 8px 18px;
+    transition-duration: 0.4s;
+  }
+
+  .botoes1 .btn:hover {
+    background-color: #777230;
+    color:antiquewhite
+  }
+
+h5 {
+    -webkit-text-stroke: 0.8px #c9c150;
+    color: transparent;
+    font-size: 25px;
+    text-align: center;
+}

@@ -1,0 +1,38 @@
+footer {
+    margin: 0;
+    background-color: #7c1097;
+    height: 40%;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    color: #ffffff;
+    line-height: 2rem;
+}
+
+footer img {
+    height: 20px;
+    width: 20px;
+}
+
+.redes-sociais {
+    display: flex;
+    align-items: center;
+    margin-left: 35% ;
+}
+
+.redes-sociais a {
+    font-size: 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.redes-sociais a:hover {
+    color: #ff0077;
+    text-transform: overline;
+}
+
+#nome {
+    color: #d387ff;
+    text-align: center;
+}
+

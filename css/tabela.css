@@ -1,0 +1,27 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  background-color: #fc6baf;
+  border: 1px solid;
+  border-bottom: 1.5px solid #fff;
+
+}
+
+tr,
+td {
+  padding: 12px;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+thead {
+  background-color: #ff0077;
+  color: white;
+}
+
+tr:nth-child(even) {
+    background-color:  #ffa1cd;
+}
+

@@ -1,0 +1,125 @@
+/* Input de idade */
+.numero input[type="number"] {
+    -webkit-appearance: textfield;
+       -moz-appearance: textfield;
+            appearance: textfield;
+}
+
+.numero input[type=number]::-webkit-inner-spin-button, 
+.numero input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+}
+
+.numero input[type="number"]{
+  outline:none;
+  border: 1px solid #ffffffff;
+  height: 25px;
+  width: 60%;
+}
+
+.numero label, input, button {
+    font-size: inherit;
+    padding: 0.2em;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+
+.numero button{
+    height:25px;
+    padding:1%;
+    border: 1px solid #ff0077;
+    background-color: #ff0077;
+    color: #ffffffff;
+    outline:none;
+    cursor: pointer;
+    border-radius: 0px;
+    width: 20px; 
+}
+
+.numero input {
+    color: #ffffffff;
+}
+
+/* Input de opções */
+.tema, .sabores {
+    background-color: transparent;
+    outline:none;
+    border: 1px solid #ffffffff;
+    height: 35px;
+    width: 100%;
+    padding:1%;
+    cursor: pointer;
+    border-radius: 0px;
+    color: rgb(129, 129, 129);
+}
+
+.sabores {
+    height: 35px;
+    width: 40%;
+    align-items: left;
+    justify-items: left;
+    margin-left: 35%;
+}
+
+option, #tit {
+    color: black;
+}
+
+.tema:hover,
+.tema:focus {
+    color: white;
+    border: 1px solid #ff0077;
+}
+
+.sabores:hover,
+.sabores:focus {
+    color: white;
+    border: 1px solid #ff0077;
+}
+
+/* Efeito dos inputs de nome e observações */
+input{
+    background-color: transparent;
+}
+
+.input-single {  
+    width: 100%;
+    margin: 30px 0;
+    position: relative;
+}
+
+.input-single label {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    color: #ffffffff;
+    cursor: text;
+    transition: 0.5s ease-in-out;
+}
+
+.input-single .input {
+    width: 100%;
+    padding: 5px;
+    color: #fff;
+    border: 0;
+    border-bottom: 2px solid rgb(200, 200, 200);
+    outline: 0;
+    font-size: 16px;
+}
+
+/*Focus diz que quando o usuário tiver interagindo com no caso o input deve acontecer tal coisa
+o ~ seleciona a coisa que vai sofrer a ação*/
+.input-single .input:focus,
+.input-single .input:valid {
+    border-bottom: 2px solid #ff0077;
+}
+
+.input-single .input:focus ~ label,
+.input-single .input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #ff0077;
+}
+

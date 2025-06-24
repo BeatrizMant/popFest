@@ -1,0 +1,23 @@
+/* Define a largura da barra de rolagem */
+html ::-webkit-scrollbar {
+    width: 20px;
+}
+
+/* Serve para customizar a barrinha de rolagem */
+html ::-webkit-scrollbar-thumb {
+    background: #ff1d866e;
+}
+
+html ::-webkit-scrollbar-thumb:hover {
+    background: #ff0077d5;
+}
+
+/* Serve para customizar o fundo da barra */
+html ::-webkit-scrollbar-track {
+    background: #ededed;
+    
+}
+
+html ::-webkit-scrollbar-button {
+    background: #ededed;
+}

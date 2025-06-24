@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Popins', sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px rgb(194, 35, 101),
+               4px 4px 2px #c9c150;
+}
+
+h2{
+  text-align: center;
+  font-size: 20px;
+}
+
+p{
+  text-align: center;
+  color: rgb(184, 184, 184);
+  font-size: 15px;
+}
+
+/* Carrossel dos combos de aniversário */
+.slides {
+    background-color: #2b2e5a;
+    border-radius: 8px;
+    margin-right: 20%;
+    margin-left: 25%;
+    width: 750px;
+    border: 1.5px solid #2b2e5a;
+    display: block;
+    align-content: center;
+    text-align: center;
+}
+
+.slides:hover,
+.slides:focus {
+    border: 1.5px solid #ff0077;
+    box-shadow: 0 0 20px #ff0077;
+}
+
+.slides img {
+    width: 350px;
+    height: 320px;
+    align-items: center;
+    border-radius: 6px;
+    box-shadow: 0 0 15px #ff0077;
+}
+
+.info img{
+    display: inline-block;
+    align-items: center;
+}
+
+
+.nCombo {
+    -webkit-text-stroke: 1px #c9c150;
+    color: transparent;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+/* Botão de passagem dos slides*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 70%;
+    width: auto;
+    margin-top: -22px;
+    padding: 8px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    justify-content: center;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #ff0077;;
+  }
+
+/* Numeração dos slides */
+.numero {
+    color: #fff;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+    margin-top: 200px;
+}
+
+/* Bolinhas de passagem do carrossel */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: #fa83bb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    
+}
+
+.active, .dot:hover {
+    color: #fff;
+    box-shadow: 0 0 10px #ff0077,
+    0 0 20px #ff0077,
+    0 0 40px #ff0077,
+    0 0 80px #ff0077,
+    0 0 100px #ff0077;
+  }
+
+.dots {
+    margin-left: 600px;
+}
+
+/* Animação */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+    
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+  
+

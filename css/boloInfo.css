@@ -1,0 +1,110 @@
+
+
+body{
+    background-color: rgb(28, 28, 75);
+    color: rgb(235, 239, 243);
+    font-family: 'Popins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+img{
+    width: 500px;
+    height: 550px;
+}
+
+h1{
+  text-align: center;
+  font-size: 40px;
+  text-shadow: 2px 2px 2px rgb(194, 35, 101),
+               4px 4px 2px #c9c150;
+}
+
+p{
+  color: rgb(184, 184, 184);
+  font-size: 20px;
+}
+
+.imagem, .texto{
+    margin: 30px;
+}
+
+h2{
+    color: #c9c150;
+}
+
+h3{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(194, 35, 101);
+}
+
+label{
+    color: rgb(184, 184, 184);
+    font-size: 20px;
+}
+
+select{
+    width: auto;
+    padding: 4px 14px;
+}
+
+select:focus{
+    background-color: #d3cc6a;
+}
+
+input{
+    width: 70%;
+    padding: 4px 14px;
+}
+
+input:focus{
+    background-color: #d3cc6a;
+}
+
+button{
+    background-color: #c9c150;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    padding: 8px 18px;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+    background-color: #777230;
+    color:antiquewhite
+}
+
+
+  /*maximo de 600px*/
+
+  @media only screen and (max-width: 600px) {
+
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+    img{
+        width: 100%;
+    }
+
+  }
+  
+    /*maximo de 450px*/
+  
+    @media only screen and (max-width: 450px) {
+  
+    
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    
+    }
