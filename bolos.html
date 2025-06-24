@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos</title>
+    <link rel="shortcut icon" href="./img/icone2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/boloEdecoracao.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/resp.css">
+    <link rel="stylesheet" href="./css/tabela.css">
+    <link rel="stylesheet" href="./css/inputs2.css">
+
+</head>
+
+<body>
+    <!--menu-->
+    <div class="menu">
+    
+        <div class="menu">
+    
+            <ul>
+                <li><a href="./index.html">Início</a></li>
+                <li><a href="./bolos.html">Bolos</a></li>
+                <li><a href="./doces.html">Doces</a></li>
+                <li><a href="./salgados.html">Salgados</a></li>
+                <li><a href="./combos.html">Combos</a></li>
+                <li><a href="./decoracao.html">Decoração</a></li>
+                <li><a href="./lembrancinhas.html">Lembrancinhas</a></li>
+            </ul>
+        </div>
+    
+        <br>
+        <br>
+        <br>
+
+    <div class="texto1">
+        <h1>Escolha o seu bolo:</h1>
+
+        <h2>Aqui temos várias exemplos pra você achar o bolo ideal para sua festa.</h2>
+        <p>Lembrando que o sabor pode ser alterado e as decorações são apenas sugestões, você poderá personalizar mais tarde.</p>
+    </div>
+
+
+    <!--cards-->
+    <div class="container">
+        
+        <div class="cards">
+            <img src="./img/boloMinions.webp" alt="bolo minions">
+            <p>Bolo Temático Minions</p>
+            <p>A partir de R$54,99</p>
+
+            <div class="container-modal">
+                <button id="btn1" onclick="openModal()">
+                    Ver mais+
+                </button>
+                <dialog>
+                    <span class="fechar" onclick="closeModal()">&times;</span>
+                   <h2>Personalize seu bolo!!</h2>
+                    <p>Nosso bolo personalizado é feito com muito amor para deixar sua festa ainda mais saborosa.<br>
+                        Você poderá escolher a massa e o recheio que preferir dentre nossas opções.
+                        Utilizamos creme de leite fresco e ganache de chocolate para a decoração.
+                        Os toppers do bolo também serão customizados de acordo com sua preferência.
+                        Lembrando que nossos ingredientes são todos da melhor qualidade.
+                    </p>
+                    <div class="opçoes">
+                            
+                        <form action="">
+                            <h5>Personalize seu topper:</h5>
+                            <div class="input-single">
+                                <div class="inputTexto">
+                                    <input required type="text" name="" id="nome" class="input">
+                                    <label for="nome">Nome do aniversáriante: </label>
+                                </div>
+                            </div>
+                                
+                            <div class="numero">
+                                <button onclick="menos()" class="menos">-</button>
+                                <input placeholder="Qual a Idade?" min=0 max="100" required id="total" type="number">
+                                <button onclick="mais()" class="mais">+</button>
+                            </div>
+                                
+                            <br>
+                            <h5 id="detalhes">Personalize o bolo:</h5>                                            
+                            <select class="tema" name="tema">
+                                <option value="chocolate50">Chocolate 50%</option>
+                                <option value="chocolate100">Chocolate 100%</option>
+                                <option value="pao de lo">Pão de ló</option>
+                                <option value="baunilha">Baunilha</option>
+                            </select>
+
+                            <br>
+                            <br> 
+            
+                            <select class="tema" name="tema">
+                                <option value="" disabled selected id="tit">Escolha o 1° sabor:</option>
+                                <option value="brigadeiro">Brigadeiro Gourmet</option>
+                                <option value="prestigio">Prestigio (Brigadeiro e beijinho)</option>
+                                <option value="doce de leite">Doce de leite</option>
+                                <option value="bombom de uva">Bombom de uva (Brigadeiro branco com uvas)</option>
+                                <option value="abacaxi">Abacaxi (Brigadeiro branco com pedaços de abacaxi)</option>
+                                <option value="nozes">Nozes (Brigadeiro branco com nozes)</option>
+                                <option value="ninho">Ninho</option>
+                                <option value="ninho com nutela">Ninho com nutela</option>
+                                <option value="ninho com morango">Ninho com morango</option>
+                                <option value="limao">Limão (Brigadeiro de limão com creme de limão)</option>
+                            </select>
+
+                            <br>
+                            <br> 
+                                
+                            <select class="tema" name="tema">
+                                <option value="" disabled selected id="tit">Escolha o 2° sabor:</option>
+                                <option value="brigadeiro">Brigadeiro Gourmet</option>
+                                <option value="prestigio">Prestigio (Brigadeiro e beijinho)</option>
+                                <option value="doce de leite">Doce de leite</option>
+                                <option value="bombom de uva">Bombom de uva (Brigadeiro branco com uvas)</option>
+                                <option value="abacaxi">Abacaxi (Brigadeiro branco com pedaços de abacaxi)</option>
+                                <option value="nozes">Nozes (Brigadeiro branco com nozes)</option>
+                                <option value="ninho">Ninho</option>
+                                <option value="ninho com nutela">Ninho com nutela</option>
+                                <option value="ninho com morango">Ninho com morango</option>
+                                <option value="limao">Limão (Brigadeiro de limão com creme de limão)</option>
+                            </select>
+
+                            <br>
+                            <br> 
+                        </div>
+                            <div class="botoes">
+                                <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                            </div>
+                        </form>
+                        <br>
+                        <br>
+                </dialog>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloMonstrosSA.jpg" alt="bolo monstros sa">
+            <p>Bolo Temático Montros S.A.</p>
+            <p>A partir de R$54,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloFloral.jpg" alt="bolo floral">
+            <p>Bolo Floral</p>
+            <p>A partir de R$59,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloFutebol.jpg" alt="bolo futebol">
+            <p>Bolo Temático Time de futebol</p>
+            <p>A partir de R$49,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloCantores.jpg" alt="bolo cantores">
+            <p>Bolo Temático Cantores</p>
+            <p>A partir de R$59,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloTurmaMonica.jpg" alt="bolo turma da monica">
+            <p>Bolo Temático Turma Mônica</p>
+            <p>A partir de R$44,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloMemes.jpg" alt="bolo memes">
+            <p>Bolo Temático Memes</p>
+            <p>A partir de R$44,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/boloMarvel.jpg" alt="bolo marvel">
+            <p>Bolo Temático Marvel</p>
+            <p>A partir de R$47,99</p>
+            
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <footer>
+        <br>
+        <p id="nome">PopFest &copy</p>
+        <p id="nome">Acompanhe nossos outros projetos pelas nossas contas no Replit:</p>
+        <div class="redes-sociais">
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@BeatrizMantovan">@BeatrizMantovan</a></p>
+            <br>
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@GeovanaSS31">@GeovanaSS31</a></p>
+        </div>
+        <p id="nome">Desenvolvido por Geovana Silva e por Beatriz Mantovani</p>
+        <br>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/inputs.js"></script>
+</body>
+</html>

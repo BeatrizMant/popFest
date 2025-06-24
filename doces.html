@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doces</title>
+    <link rel="shortcut icon" href="./img/icone2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/boloEdecoracao.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/resp.css">
+    <link rel="stylesheet" href="./css/inputs2.css">
+</head>
+
+<body>
+    <!--menu-->
+    <div class="menu">
+    
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./bolos.html">Bolos</a></li>
+            <li><a href="./doces.html">Doces</a></li>
+            <li><a href="./salgados.html">Salgados</a></li>
+            <li><a href="./combos.html">Combos</a></li>
+            <li><a href="./decoracao.html">Decoração</a></li>
+            <li><a href="./lembrancinhas.html">Lembrancinhas</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Escolha seus docinhos:</h1>
+
+    <h2>Aqui você pode  escolher os doces perfeitos para sua festa.</h2>
+
+    <p>Todos os doces são padronizados com 18 gramas totais.</p>
+
+    <!--cards-->
+    <div class="container">
+        
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 20 doces</p>
+            <p>R$49,99</p>
+             
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Doces</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                        <div class="opçoes">
+                            <div class="imagem">
+                                <img id="img-modal" src="./img/doces.jpg" alt="doces">
+                            </div>
+                            <form action="">
+                                <div class="texto" id="texto">
+                        
+                                    <h2>Escolha os sabores:</h2>
+                                    <select class="sabores" name="sabores">
+                                        <option value="" disabled selected id="tit">1° sabor:</option>
+                                        <option value="brigadeiro">Brigadeiro</option>
+                                        <option value="beijinho">Beijinho</option>
+                                        <option value="paçoca">Paçoca</option>
+                                        <option value="ninho com nutela">Ninho com nutela</option>
+                                        <option value="brigadeiro branco">Brigadeiro branco</option>
+                                        <option value="bicho de pé">Bicho de pé</option>
+                                        <option value="surpresinha de uva">Surpresinha de uva</option>
+                                        <option value="oreo">Oreo</option>
+                                        <option value="confete">Confete</option>
+                                        <option value="chocobol">Chocobol</option>
+                                        <option value="casadinho">Casadinho</option>
+                                        <option value="churros">Churros</option>
+                                    </select>
+                        
+                                    
+                    
+                                    <br>
+                                    <br>
+                    
+
+                                    <select class="sabores" name="sabores">
+                                        <option value="" disabled selected id="tit">2° sabor:</option>
+                                        <option value="brigadeiro">Brigadeiro</option>
+                                        <option value="beijinho">Beijinho</option>
+                                        <option value="paçoca">Paçoca</option>
+                                        <option value="ninho com nutela">Ninho com nutela</option>
+                                        <option value="brigadeiro branco">Brigadeiro branco</option>
+                                        <option value="bicho de pé">Bicho de pé</option>
+                                        <option value="surpresinha de uva">Surpresinha de uva</option>
+                                        <option value="oreo">Oreo</option>
+                                        <option value="confete">Confete</option>
+                                        <option value="chocobol">Chocobol</option>
+                                        <option value="casadinho">Casadinho</option>
+                                        <option value="churros">Churros</option>
+                                    </select>
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <select class="sabores" name="sabores">
+                                        <option value="" disabled selected id="tit">3° sabor:</option>
+                                        <option value="brigadeiro">Brigadeiro</option>
+                                        <option value="beijinho">Beijinho</option>
+                                        <option value="paçoca">Paçoca</option>
+                                        <option value="ninho com nutela">Ninho com nutela</option>
+                                        <option value="brigadeiro branco">Brigadeiro branco</option>
+                                        <option value="bicho de pé">Bicho de pé</option>
+                                        <option value="surpresinha de uva">Surpresinha de uva</option>
+                                        <option value="oreo">Oreo</option>
+                                        <option value="confete">Confete</option>
+                                        <option value="chocobol">Chocobol</option>
+                                        <option value="casadinho">Casadinho</option>
+                                        <option value="churros">Churros</option>
+                                    </select>
+                    
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <select class="sabores" name="sabores">
+                                        <option value="" disabled selected id="tit">4° sabor:</option>
+                                        <option value="brigadeiro">Brigadeiro</option>
+                                        <option value="beijinho">Beijinho</option>
+                                        <option value="paçoca">Paçoca</option>
+                                        <option value="ninho com nutela">Ninho com nutela</option>
+                                        <option value="brigadeiro branco">Brigadeiro branco</option>
+                                        <option value="bicho de pé">Bicho de pé</option>
+                                        <option value="surpresinha de uva">Surpresinha de uva</option>
+                                        <option value="oreo">Oreo</option>
+                                        <option value="confete">Confete</option>
+                                        <option value="chocobol">Chocobol</option>
+                                        <option value="casadinho">Casadinho</option>
+                                        <option value="churros">Churros</option>
+                                    </select>
+
+                                    <br>
+                                    <br>
+
+                                    <select class="sabores" name="sabores">
+                                        <option value="" disabled selected id="tit">5° sabor:</option>
+                                        <option value="brigadeiro">Brigadeiro</option>
+                                        <option value="beijinho">Beijinho</option>
+                                        <option value="paçoca">Paçoca</option>
+                                        <option value="ninho com nutela">Ninho com nutela</option>
+                                        <option value="brigadeiro branco">Brigadeiro branco</option>
+                                        <option value="bicho de pé">Bicho de pé</option>
+                                        <option value="surpresinha de uva">Surpresinha de uva</option>
+                                        <option value="oreo">Oreo</option>
+                                        <option value="confete">Confete</option>
+                                        <option value="chocobol">Chocobol</option>
+                                        <option value="casadinho">Casadinho</option>
+                                        <option value="churros">Churros</option>
+                                    </select>
+                                </div>
+                                <br>
+                                <div class="botoes2">
+                                    <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                    <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                                </div>
+                            </form>
+
+                            <br>
+                            <br>
+
+                    </dialog>
+                    </div>
+                </div>
+            </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 50 doces</p>
+            <p>R$79,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 50 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <br>
+                                <div class="botoes">
+                                    <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                    <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 80 doces</p>
+            <p>R$99,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 80 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <button type="submit" class="botao submit">Adicionar ao carrinho</button>
+                
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 100 doces</p>
+            <p>R$129,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 100 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <button type="submit" class="botao submit">Adicionar ao carrinho</button>
+                
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 150 doces</p>
+            <p>R$189,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 150 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <button type="submit" class="botao submit">Adicionar ao carrinho</button>
+                
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 200 doces</p>
+            <p>R$209,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 200 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <button type="submit" class="botao submit">Adicionar ao carrinho</button>
+                
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 250 doces</p>
+            <p>R$279,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 250 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <button type="submit" class="botao submit">Adicionar ao carrinho</button>
+                
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/doces.jpg" alt="doces">
+            <p>Combo 300 doces</p>
+            <p>R$349,99</p>
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Combo 300 docinhos</h2>
+                        <p> Nossos docinhos são preparados com muito carinho para você.
+                            Você poderá escolher até quatro sabores para montar seu combo.
+                            Lembrando que nossos ingredientes são todos da melhor qualidade.</p>
+                            <div class="imagem">
+                                <img src="./img/doces.jpg" alt="doces">
+                            </div>
+                        <div class="texto">
+                            <form action="#" method="post">
+                
+                                <h2>Escolha os sabores:</h2>
+                
+                                <label for="sabores">1° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">2° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">3° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                
+                
+                                <br>
+                                <br>
+                
+                                <label for="sabores">4° sabor:</label>
+                                <select name="sabores" id="sabores">
+                                    <option value="brigadeiro">Brigadeiro</option>
+                                    <option value="beijinho">Beijinho</option>
+                                    <option value="paçoca">Paçoca</option>
+                                    <option value="ninho com nutela">Ninho com nutela</option>
+                                    <option value="brigadeiro branco">Brigadeiro branco</option>
+                                    <option value="bicho de pé">Bicho de pé</option>
+                                    <option value="surpresinha de uva">Surpresinha de uva</option>
+                                    <option value="oreo">Oreo</option>
+                                    <option value="confete">Confete</option>
+                                    <option value="chocobol">Chocobol</option>
+                                    <option value="casadinho">Casadinho</option>
+                                    <option value="churros">Churros</option>
+                                </select>
+                                <br>
+                                <br>
+                
+                                <h2>Observações:</h2>
+                                <p><label for="nome">Escreva aqui:</label><br><input type="text"></p>
+                                <br>
+                                <br>
+                                <div class="botoes">
+                                    <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                    <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                                </div>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <footer>
+        <br>
+        <p id="nome">PopFest &copy</p>
+        <p id="nome">Acompanhe nossos outros projetos pelas nossas contas no Replit:</p>
+        <div class="redes-sociais">
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@BeatrizMantovan">@BeatrizMantovan</a></p>
+            <br>
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@GeovanaSS31">@GeovanaSS31</a></p>
+        </div>
+        <p id="nome">Desenvolvido por Geovana Silva e por Beatriz Mantovani</p>
+        <br>
+    </footer>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/inputs.js"></script>
+    
+</body>
+</html>

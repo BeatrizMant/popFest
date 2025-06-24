@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lembrancinhas</title>
+    <link rel="shortcut icon" href="./img/icone2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/boloEdecoracao.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/lembrancinha.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/resp.css">
+    <link rel="stylesheet" href="./css/tabela.css">
+    <link rel="stylesheet" href="./css/inputs2.css">
+</head>
+
+<body>
+    <!--menu-->
+    <div class="menu">
+    
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./bolos.html">Bolos</a></li>
+            <li><a href="./doces.html">Doces</a></li>
+            <li><a href="./salgados.html">Salgados</a></li>
+            <li><a href="./combos.html">Combos</a></li>
+            <li><a href="./decoracao.html">Decoração</a></li>
+            <li><a href="./lembrancinhas.html">Lembrancinhas</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    <div class="texto">
+        <h1>Escolha suas lembrancinhas:</h1>
+        <h2>Aqui temos alguns tipos para você achar a lembrança ideal para sua festa.</h2>
+        <p>Afinal, esse é a melhor forma de fazer seus convidados lembrarem com muito amor da sua festa.</p>
+    </div>
+
+    <!--cards-->
+    <div class="container">
+
+        <div class="cards">
+            <img src="./img/bolhas.png" alt="bolhas de sabão">
+            <p>Bolhas de sabão personalizada</p>
+            <p>A partir de R$69,99</p>
+            
+            <div class="container-modal">
+                <div>
+                    <button id="btn1" onclick="openModal()">
+                        Ver mais+
+                    </button>
+                    <dialog>
+                        <span class="fechar" onclick="closeModal()">&times;</span>
+                        <h2>Personalize aqui suas lembrancinhas!!</h2>
+                        <p>Faça com que sua festa seja memorável, com nossas lembrancinhas ele poderá levar um 
+                        pedacinho da festa para se recordar!!</p>
+                        <div class="opçoes">
+                            <div class="tabela-lemb">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <td> Quantidades </td>
+                                            <td> Preços </td>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td> 250 unidades</td>
+                                            <td> R$ 500,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> 500 unidades</td>
+                                            <td> R$ 1.000,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> 750 unidades</td>
+                                            <td> R$ 1.500,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> 1.000 unidades</td>
+                                            <td> R$ 2.000,00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td> 1.500 unidades</td>
+                                            <td> R$ 3.000,00</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <form action="">
+                                <div class="input-single">
+                                    <div class="inputTexto">
+                                        <input required type="text" name="" id="nome" class="input">
+                                        <label for="nome">Nome do aniversáriante: </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="numero">
+                                    <button onclick="menos()" class="menos">-</button>
+                                    <input placeholder="Qual a Idade?" min=0 max="100" required id="total" type="number">
+                                    <button onclick="mais()" class="mais">+</button>
+                                </div>
+                                <br>
+
+                                <select class="tema" name="tema">
+                                    <option value="" disabled selected id="tit">Escolha as quantidades:</option>
+                                    <option value="250">250 unidades</option>
+                                    <option value="500">500 unidades</option>
+                                    <option value="750">750 unidades</option>
+                                    <option value="1000">1000 unidades</option>
+                                    <option value="1500">1500 unidades</option>
+                                </select>
+                                <br>
+                                <br>                                                                                       
+                                <select class="tema" name="tema">
+                                    <option value="" disabled selected id="tit">Escolha o tema:</option>
+                                    <option value="Mickey">Mickey Mouse</option>
+                                    <option value="Memes">Memes</option>
+                                    <option value="Frozen">Frozen</option>
+                                    <option value="Futebol">Futebol</option>
+                                    <option value="Marvel">Marvel</option>
+                                    <option value="Euphoria">Euphoria</option>
+                                    <option value="Monstrons SA">Monstrons SA</option>
+                                    <option value="Neon">Neon</option>
+                                    <option value="Ariana Grande">Ariana Grande</option>
+                                    <option value="Floral">Floral</option>
+                                </select>
+                        </div>
+                                <br>
+                                <div class="botoes">
+                                    <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                    <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                    </dialog>
+                </div>
+            </div>
+        </div>
+
+        <div class="cards">
+            <img src="./img/balas.png" alt="potinho de balas">
+            <p>Potinhos temáticos de balas coloridas </p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/desenho.png" alt="livro">
+            <p>Livrinho de colorir personalizado</p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/caixinhaDoces.png" alt="caixinha de doces">
+            <p>Caixinhas surpresa de doces personalizadas</p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+
+        <div class="cards">
+            <img src="./img/pintura.png" alt="kit pintura">
+            <p>Kit pintura personalizado</p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+
+        <div class="cards">
+            <img src="./img/bolo.png" alt="caixinha de bolo">
+            <p>caixinha de bolo personalizada</p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+
+        <div class="cards">
+            <img src="./img/essencia.png" alt="essencia">
+            <p>Essências personalizadas</p>
+            <p>A partir de R$69,99</p>
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+
+        <div class="cards">
+            <img src="./img/lembrancinha_inicial.jpg" alt="copinho marshmallow">
+            <p>Copinhos personalizados de marshmallow</p>
+            <p>A partir de R$69,99</p>
+
+            <button id="btn1" onclick="openModal()">
+                Ver mais+
+            </button>
+        </div>
+            
+    </div>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/inputs.js"></script>
+    
+    <footer>
+        <br>
+        <p id="nome">PopFest &copy</p>
+        <p id="nome">Acompanhe nossos outros projetos pelas nossas contas no Replit:</p>
+        <div class="redes-sociais">
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@BeatrizMantovan">@BeatrizMantovan</a></p>
+            <br>
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@GeovanaSS31">@GeovanaSS31</a></p>
+        </div>
+        <p id="nome">Desenvolvido por Geovana Silva e por Beatriz Mantovani</p>
+        <br>
+    </footer>
+
+</body>
+</html>

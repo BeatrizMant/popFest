@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salgados</title>
+    <link rel="shortcut icon" href="./img/icone2.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/boloEdecoracao.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/lembrancinha.css">
+    <link rel="stylesheet" href="./css/modal.css">
+    <link rel="stylesheet" href="./css/inputs.css">
+    <link rel="stylesheet" href="./css/scrollbar.css">
+    <link rel="stylesheet" href="./css/rodape.css">
+    <link rel="stylesheet" href="./css/resp.css">
+    <link rel="stylesheet" href="./css/inputs2.css">
+</head>
+
+<body>
+    <!--menu-->
+    <div class="menu">
+    
+        <ul>
+            <li><a href="./index.html">Início</a></li>
+            <li><a href="./bolos.html">Bolos</a></li>
+            <li><a href="./doces.html">Doces</a></li>
+            <li><a href="./salgados.html">Salgados</a></li>
+            <li><a href="./combos.html">Combos</a></li>
+            <li><a href="./decoracao.html">Decoração</a></li>
+            <li><a href="./lembrancinhas.html">Lembrancinhas</a></li>
+        </ul>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <h1>Escolha seus salgados:</h1>
+
+    <h2>Aqui você pode montar o combo perfeito para sua festa.</h2>
+
+    <p>Todos os salgados são padronizados com 23 gramas, sendo 11 de massa e 12 de recheio.</p>
+
+    <!--cards-->
+    <div class="container">
+        <div class="cards">
+            <img src="./img/salgados.jpg" alt="salgados">
+            <p>Combo 20 salgados</p>
+            <p>R$29,99</p>
+            <div class="container-modal">
+            
+                <button id="btn1" onclick="openModal()">
+                    Ver mais+
+                </button>
+                <dialog>
+                    <span class="fechar" onclick="closeModal()">&times;</span>
+                    <h2>Personalize aqui suas lembrancinhas!!</h2>
+                    <p>Faça com que sua festa seja memorável, com nossas lembrancinhas ele poderá levar um 
+                    pedacinho da festa para se recordar!!</p>
+                    <div class="opçoes">
+                        <div class="imagem">
+                            <img src="./img/salgados.jpg" alt="">
+                        </div>
+                        <form action="">
+                            <div class="texto">
+                    
+                                    <h2>Escolha os sabores:</h2>
+                    
+                                    <select class="sabores" name="sabores" id="sabores">
+                                        <option value="" disabled selected id="tit">Escolha o 1° sabor:</option>
+                                        <option value="coxinha">Coxinha</option>
+                                        <option value="bolinha de queijo">Bolinha de queijo</option>
+                                        <option value="presunto e queijo">Presunto e queijo</option>
+                                        <option value="kibe">Kibe</option>
+                                        <option value="salsicha">Salsicha</option>
+                                        <option value="calabresa">Calabresa</option>
+                                        <option value="nenhum">Nenhum</option>
+                                    </select>
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <select class="sabores" name="sabores" id="sabores>
+                                        <option value="" disabled selected id="tit">Escolha o 2° sabor:</option>
+                                        <option value="coxinha">Coxinha</option>
+                                        <option value="bolinha de queijo">Bolinha de queijo</option>
+                                        <option value="presunto e queijo">Presunto e queijo</option>
+                                        <option value="kibe">Kibe</option>
+                                        <option value="salsicha">Salsicha</option>
+                                        <option value="calabresa">Calabresa</option>
+                                        <option value="nenhum">Nenhum</option>
+                                    </select>
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <select class="sabores" name="sabores" id="sabores>
+                                        <option value="" disabled selected id="tit">Escolha o 3° sabor:</option>
+                                        <option value="coxinha">Coxinha</option>
+                                        <option value="bolinha de queijo">Bolinha de queijo</option>
+                                        <option value="presunto e queijo">Presunto e queijo</option>
+                                        <option value="kibe">Kibe</option>
+                                        <option value="salsicha">Salsicha</option>
+                                        <option value="calabresa">Calabresa</option>
+                                        <option value="nenhum">Nenhum</option>
+                                    </select>
+                    
+                    
+                                    <br>
+                                    <br>
+                    
+                                    <select class="sabores" name="sabores" id="sabores">
+                                        <option value="" disabled selected id="tit">Escolha o 4° sabor:</option>
+                                        <option value="coxinha">Coxinha</option>
+                                        <option value="bolinha de queijo">Bolinha de queijo</option>
+                                        <option value="presunto e queijo">Presunto e queijo</option>
+                                        <option value="kibe">Kibe</option>
+                                        <option value="salsicha">Salsicha</option>
+                                        <option value="calabresa">Calabresa</option>
+                                        <option value="nenhum">Nenhum</option>
+                                    </select>
+                    
+                    
+                                    <br>
+                                    <br>
+                
+                                <select class="sabores" name="sabores" id="sabores">
+                                    <option value="" disabled selected id="tit">Escolha o 5° sabor:</option>
+                                    <option value="coxinha">Coxinha</option>
+                                    <option value="bolinha de queijo">Bolinha de queijo</option>
+                                    <option value="presunto e queijo">Presunto e queijo</option>
+                                    <option value="kibe">Kibe</option>
+                                    <option value="salsicha">Salsicha</option>
+                                    <option value="calabresa">Calabresa</option>
+                                    <option value="nenhum">Nenhum</option>
+                                </select>
+                    </div>
+                                <br>
+                                <div class="botoes2">
+                                    <button class="btn" input type="reset" value="Limpar"><span>Limpar</span></button>
+                                    <button class="btn" input type="button" value="Adicionar" onclick="alert('Item adicionado ao carrinho com sucesso!')"><span>+Adicionar ao carrinho</span></button>
+                                </div>
+                            </form>
+                            <br>
+                            <br>
+                    </dialog>
+            
+        </div>
+    </div>
+
+    <div class="cards">
+        <img src="./img/salgados.jpg" alt="salgados">
+        <p>Combo 40 salgados</p>
+        <p>R$49,99</p>
+
+        <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+                    
+        <div class="cards">
+            <img src="./img/salgados.jpg" alt="salgados">
+            <p>Combo 60 salgados</p>
+            <p>R$74,99</p>
+
+             <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+        <div class="cards">
+            <img src="./img/salgados.jpg" alt="salgados">
+            <p>Combo 100 salgados</p>
+            <p>R$109,99</p>
+
+             <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+
+    <div class="cards">
+        <img src="./img/salgados.jpg" alt="salgados">
+        <p>Combo 150 salgados</p>
+        <p>R$149,99</p>
+
+        <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+    <div class="cards">
+        <img src="./img/salgados.jpg" alt="salgados">
+        <p>Combo 200 salgados</p>
+        <p>R$189,99</p>
+
+        <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+
+    <div class="cards">
+        <img src="./img/salgados.jpg" alt="salgados">
+        <p>Combo 250 salgados</p>
+        <p>R$199,99</p>
+
+        <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+
+    <div class="cards">
+        <img src="./img/salgados.jpg" alt="salgados">
+        <p>Combo 300 salgados</p>
+        <p>R$249,99</p>
+        <button id="btn1" onclick="openModal()">
+            Ver mais+
+        </button>
+    </div>
+
+    </div>
+    <br>
+    <br>
+    <footer>
+        <br>
+        <p id="nome">PopFest &copy</p>
+        <p id="nome">Acompanhe nossos outros projetos pelas nossas contas no Replit:</p>
+        <div class="redes-sociais">
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@BeatrizMantovan">@BeatrizMantovan</a></p>
+            <br>
+            <p><img src="./img/icon-replit.png"><a href="https://replit.com/@GeovanaSS31">@GeovanaSS31</a></p>
+        </div>
+        <p id="nome">Desenvolvido por Geovana Silva e por Beatriz Mantovani</p>
+        <br>
+    </footer>
+
+
+    <script src="./js/inputs.js"></script>
+    <script src="./js/modal.js"></script>
+</body>
+</html>
